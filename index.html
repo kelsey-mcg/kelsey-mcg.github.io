@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>XMAS Tree Generator</title>
+	<title>KelseyMcGinnis.com</title>
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
 		
@@ -21,46 +21,6 @@
 
 <body>
 	<!-- html comment -->
-	<h1>Christmas Tree Generator</h1>
-	<div id="output">Merry Christmas! <br> </div>
-
-	<script type="text/javascript">
-
-	let output_forest = document.getElementById("output");
-	let tree_ht = prompt("How tall do you want your Christmas Tree?", 5);
-	validateAndBuild(tree_ht);
-
-	function validateAndBuild(height){
-		if (height == "" || height == null || isNaN(height)) {
-			output_forest.innerHTML = "error: height is invalid";
-		} else if (height <= 0) {
-			output_forest.innerHTML = "error: height must be greater than 0";
-		} else {
-			buildTree(height);
-		}
-	}
-
-	function buildTree(height){
-		//creating rows of branches
-		for (let row = 1; row <= height; row++) {
-			let branches = (row + (row -1));
-			output_forest.innerHTML += ("<br>");
-			console.log(branches);
-
-			//creating spaces (to make tree symmetrical)
-			//for (let spaces = 1; spaces)
-
-			//creating branches
-			for (let width = 1; width <= branches; width++) {
-				output_forest.innerHTML += ("*");
-			}
-
-		}
-
-	}
-
-	</script>
-
+	<h1>KelseyMcGinnis.com</h1>
 </body>
-
 </html>
