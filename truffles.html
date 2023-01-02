@@ -2,6 +2,10 @@
 <html>
 <head>
 	<title>Truffles</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" href="style.css">
 	<style type="text/css">
 	/*	
@@ -12,45 +16,121 @@
 			color: #ffffff;
 		}
 	*/
-		img{
+/*		img{
 			width: 100%;
 			max-width: 1024px;
 			border-radius: 20px;
-		}
+		}*/
 	</style>
 </head>
 
 <body>
-	<!-- html comment -->
-	<h1>List of Best Cats Ever:</h1>
-	<h2>Truffles</h2>
 
-	<img src="images/babytruffles.jpg">
-	<img src="images/majestictruffles.jpg">
-	<img src="images/playtruff.jpg">
-	<img src="images/sleepingtruff.jpg">
-	<img src="images/truffbathtub.jpg">
-	<img src="images/truffbed.jpg">
-	<img src="images/truffbigtwist.jpg">
-	<img src="images/truffbigyawn.jpg">
-	<img src="images/truff.catwalk.jpg">
-	<img src="images/truff.floating.jpg">
-	<img src="images/truffles10.jpg">
-	<img src="images/trufflesonrug.jpg">
-	<img src="images/truff.png">
-	<img src="images/truffstoop.jpg">
+	<div class="container">
+	 	<!-- html comment -->
+		<h1>List of Best Cats Ever:</h1>
+		<h2>Truffles</h2>
 
-	<h3>Some facts about truffles:</h3>
-	<p>
-		Truffles was born and adopted in 2007. 
-		<br>
-		She had two gray twin brothers who were mirror images of one another. 
-		<br>
-		Truffles grew up as a spoiled only cat. She is sassy and cares about her appearance.
-		<br>
-		She loves to go the the furthest corner of the house and scream at the top of her lungs.
-	</p>
+		<div id="truffCarousel" class="carousel slide">
+		  	<div class="carousel-inner" xstyle="height: 400px; overflow: hidden;">
+		   
+			    <div class="carousel-item active">
+					<img src="images/babytruffles.jpg" class=" img-fluid d-block w-100">
+				</div>
 
+				<div class="carousel-item">
+					<img src="images/majestictruffles.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/playtruff.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/sleepingtruff.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truffbathtub.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truffbed.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truffbigtwist.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truffbigyawn.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truff.catwalk.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truff.floating.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truffles10.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/trufflesonrug.jpg" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truff.png" class=" img-fluid d-block w-100">
+				</div>
+
+				<div class="carousel-item">
+					<img src="images/truffstoop.jpg" class=" img-fluid d-block w-100">
+				</div>
+		   
+		  	</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#truffCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#truffCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+
+
+			
+
+
+		<h3>Some facts about truffles:</h3>
+		<p>
+			Truffles was born and adopted in 2007. 
+			<br>
+			She had two gray twin brothers who were mirror images of one another. 
+			<br>
+			Truffles grew up as a spoiled only cat. She is sassy and cares about her appearance.
+			<br>
+			She loves to go the the furthest corner of the house and scream at the top of her lungs.
+		</p>
+
+	</div>
+		
+	<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", () => {
+		console.log("rdy");
+
+		truffCarouselElement = document.querySelector('#truffCarousel')
+
+		carousel = new bootstrap.Carousel(truffCarouselElement, {
+		  interval: 2000,
+		  touch: true,
+		});
+	});
+	</script>
 </body>
 
 </html>
